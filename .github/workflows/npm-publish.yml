@@ -17,9 +17,9 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: cp README.md projects/ngb-typed-modal/README.md
+      - run: cp README.md projects/ngx-bootstrap-typed-modal/README.md
       - run: npm run build:lib
       - run: npm publish
-        working-directory: dist/ngb-typed-modal
+        working-directory: dist/ngx-bootstrap-typed-modal
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

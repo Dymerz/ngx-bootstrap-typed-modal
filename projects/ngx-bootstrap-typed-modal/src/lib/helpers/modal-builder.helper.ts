@@ -1,13 +1,13 @@
 // Angular modules
-import { Type }                   from '@angular/core';
+import { Type }                  from '@angular/core';
 
 // External modules
-import { NgbTypedModalRef } from '../types/ngb-typed-modal-ref.type';
-import { NgbModal }               from '@ng-bootstrap/ng-bootstrap';
-import { NgbModalOptions }        from '@ng-bootstrap/ng-bootstrap';
+import { NgbTypedModalRef }      from '../types/ngb-typed-modal-ref.type';
+import { NgbModal }              from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalOptions }       from '@ng-bootstrap/ng-bootstrap';
 
 // Components
-import { ModalWrapperComponent }  from '../modal-wrapper/modal-wrapper.component';
+import { ModalWrapperComponent } from '../modal-wrapper/modal-wrapper.component';
 
 
 export class ModalBuilder<Component, Input, Output>

@@ -3,7 +3,7 @@ import { Component }     from '@angular/core';
 import { OnInit }        from '@angular/core';
 
 // External modules
-import { NgbTypedModal } from 'ngb-typed-modal';
+import { NgbTypedModal } from 'ngx-bootstrap-typed-modal';
 
 
 type DataInput  = null

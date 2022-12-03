@@ -12,9 +12,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngb-typed-modal": [
-        "dist/ngb-typed-modal/ngb-typed-modal",
-        "dist/ngb-typed-modal"
+      "ngx-bootstrap-typed-modal": [
+        "dist/ngx-bootstrap-typed-modal/ngx-bootstrap-typed-modal",
+        "dist/ngx-bootstrap-typed-modal"
       ]
     },
     "declaration": false,

@@ -4,7 +4,7 @@ import { BrowserModule }            from '@angular/platform-browser';
 
 // External modules
 import { NgbModule }                from '@ng-bootstrap/ng-bootstrap';
-import { NgbTypedModalModule }      from 'ngb-typed-modal';
+import { NgbTypedModalModule }      from 'ngx-bootstrap-typed-modal';
 
 // Components
 import { AppComponent }             from './app.component';

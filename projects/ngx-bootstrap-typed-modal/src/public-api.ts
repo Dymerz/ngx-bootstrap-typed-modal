@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ngb-typed-modal
+ * Public API Surface of ngx-bootstrap-typed-modal
  */
 
 export * from './lib/helpers/modal-builder.helper';

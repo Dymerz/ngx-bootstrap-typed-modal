@@ -3,7 +3,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:lib": "ng build ngb-typed-modal",
+    "build:lib": "ng build ngx-bootstrap-typed-modal",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

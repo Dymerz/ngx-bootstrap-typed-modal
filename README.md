@@ -2,11 +2,11 @@ Angular Typed Bootstrap Modal
 =============================
 
 
-`ngb-typed-modal` add typing to the NgbModal of `@ng-bootstrap/ng-bootstrap`, this way you never loose your types when opening a modal!
+`ngx-bootstrap-typed-modal` add typing to the NgbModal of `@ng-bootstrap/ng-bootstrap`, this way you never loose your types when opening a modal!
 
-[![package.json version](https://img.shields.io/github/package-json/v/Dymerz/ngb-typed-modal?filename=projects%2Fngb-typed-modal%2Fpackage.json)](https://github.com/Dymerz/ngb-typed-modal/)
-[![npm Package](https://img.shields.io/npm/v/ngb-typed-modal.svg?color=red&style=flat-square)](https://www.npmjs.org/package/ngb-typed-modal)
-[![npm Package](https://img.shields.io/npm/l/ngb-typed-modal.svg?color=red&style=flat-square)](https://www.npmjs.org/package/ngb-typed-modal)
+[![package.json version](https://img.shields.io/github/package-json/v/Dymerz/ngx-bootstrap-typed-modal?filename=projects%2Fngx-bootstrap-typed-modal%2Fpackage.json)](https://github.com/Dymerz/ngx-bootstrap-typed-modal/)
+[![npm Package](https://img.shields.io/npm/v/ngx-bootstrap-typed-modal.svg?color=red&style=flat-square)](https://www.npmjs.org/package/ngx-bootstrap-typed-modal)
+[![npm Package](https://img.shields.io/npm/l/ngx-bootstrap-typed-modal.svg?color=red&style=flat-square)](https://www.npmjs.org/package/ngx-bootstrap-typed-modal)
 
 Why
 ---
@@ -16,7 +16,7 @@ I don't want to see any `any` in my projects!
 Installation
 ------------
 
-    npm install ngb-typed-modal
+    npm install ngx-bootstrap-typed-modal
 
 Examples
 --------
@@ -78,7 +78,7 @@ in the generated component, extend the class with `NgbTypedModal`:
 ```ts
 import { Component }     from '@angular/core';
 import { OnInit }        from '@angular/core';
-import { NgbTypedModal } from 'ngb-typed-modal'; // <- import
+import { NgbTypedModal } from 'ngx-bootstrap-typed-modal'; // <- import
 
 // define input and output types
 type DataInput  = { message: string }

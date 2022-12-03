@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngb-typed-modal": {
+    "ngx-bootstrap-typed-modal": {
       "projectType": "library",
-      "root": "projects/ngb-typed-modal",
-      "sourceRoot": "projects/ngb-typed-modal/src",
+      "root": "projects/ngx-bootstrap-typed-modal",
+      "sourceRoot": "projects/ngx-bootstrap-typed-modal/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngb-typed-modal/ng-package.json"
+            "project": "projects/ngx-bootstrap-typed-modal/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngb-typed-modal/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-bootstrap-typed-modal/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngb-typed-modal/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-bootstrap-typed-modal/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,9 +27,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngb-typed-modal/src/test.ts",
-            "tsConfig": "projects/ngb-typed-modal/tsconfig.spec.json",
-            "karmaConfig": "projects/ngb-typed-modal/karma.conf.js"
+            "main": "projects/ngx-bootstrap-typed-modal/src/test.ts",
+            "tsConfig": "projects/ngx-bootstrap-typed-modal/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-bootstrap-typed-modal/karma.conf.js"
           }
         }
       }
