@@ -6,7 +6,7 @@ import { Type }                  from '@angular/core';
 import { ViewChild }             from '@angular/core';
 
 // External modules
-import { AbstractModal }         from '../helpers/abstract-modal';
+import { NgbTypedModal }         from '../helpers/ngb-typed-modal';
 import { ModalData }             from '../types/modal-data.types';
 import { ModalForm }             from '../types/modal-form.types';
 import { NgbActiveModal }        from '@ng-bootstrap/ng-bootstrap';
@@ -40,7 +40,7 @@ export class ModalWrapperComponent implements OnInit {
     const viewContainerRef = this.modalWrapperHost.viewContainerRef;
     viewContainerRef.clear()
 
-    const component = viewContainerRef.createComponent<AbstractModal<unknown, unknown>>(modalForm.component)
+    const component = viewContainerRef.createComponent<NgbTypedModal<unknown, unknown>>(modalForm.component)
     component.instance.data = modalForm.data;
     component.instance.submitData.subscribe(this.activeModal.close)
     component.instance.submitClose.subscribe(this.activeModal.close)
