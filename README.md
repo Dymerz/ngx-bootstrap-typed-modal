@@ -4,7 +4,6 @@ Angular Typed Bootstrap Modal
 
 `ngx-bootstrap-typed-modal` add typing to the NgbModal of `@ng-bootstrap/ng-bootstrap`, this way you never loose your types when opening a modal!
 
-[![package.json version](https://img.shields.io/github/package-json/v/Dymerz/ngx-bootstrap-typed-modal?filename=projects%2Fngx-bootstrap-typed-modal%2Fpackage.json)](https://github.com/Dymerz/ngx-bootstrap-typed-modal/)
 [![npm Package](https://img.shields.io/npm/v/ngx-bootstrap-typed-modal.svg?color=red&style=flat-square)](https://www.npmjs.org/package/ngx-bootstrap-typed-modal)
 [![npm Package](https://img.shields.io/npm/l/ngx-bootstrap-typed-modal.svg?color=red&style=flat-square)](https://www.npmjs.org/package/ngx-bootstrap-typed-modal)
 
