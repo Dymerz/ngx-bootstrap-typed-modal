@@ -1,0 +1,2 @@
+# Angular Typed Bootstrap Modal
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/Dymerz/ngb-typed-modal?filename=projects%2Fngb-typed-modal%2Fpackage.json) ![npm](https://img.shields.io/npm/v/ngb-typed-modal?color=red&style=flat-square) ![NPM](https://img.shields.io/npm/l/ngb-typed-modal?style=flat-square)

@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngb-typed-modal": {
+      "projectType": "library",
+      "root": "projects/ngb-typed-modal",
+      "sourceRoot": "projects/ngb-typed-modal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngb-typed-modal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngb-typed-modal/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngb-typed-modal/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngb-typed-modal/src/test.ts",
+            "tsConfig": "projects/ngb-typed-modal/tsconfig.spec.json",
+            "karmaConfig": "projects/ngb-typed-modal/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "074cfde5-72c6-4b09-ba67-b1bfae52c0b1"
+  }
+}
