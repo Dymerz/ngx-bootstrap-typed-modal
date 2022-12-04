@@ -31,7 +31,7 @@ const modalRef = new YesNoModalComponent().make(this.ngModal)
   .setTitle('Greetings')             // title
   .setInput({username: 'Bob'})       // pass inputs
   .setSize('lg')                     // defined the size
-  .setForceMode(true)                // if the user can dismiss by lcicking on the background
+  .setForceMode(true)                // if the user can dismiss by clicking on the background
   .show();                           // show the modal
 
 modalRef.result.then(result => {
@@ -59,7 +59,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule,          // should present, if not install `@ng-bootstrap/ng-bootstrap`
+    NgbModule,          // should be present, if not install `@ng-bootstrap/ng-bootstrap`
     NgbTypedModalModule // <- add this
   ],
   providers: [],
@@ -164,7 +164,6 @@ public data: Input
 ```
 
 Submit result and close the modal.
-triger
 ```ts
 public submitData: new EventEmitter<DataOutput>()
 ```

@@ -19,7 +19,7 @@ import { YesNoModalComponent }      from './modals/yes-no-modal/yes-no-modal.com
   ],
   imports: [
     BrowserModule,
-    NgbModule,          // should present, if not install `@ng-bootstrap/ng-bootstrap` first
+    NgbModule,          // should be present, if not install `@ng-bootstrap/ng-bootstrap` first
     NgbTypedModalModule // <- add this
   ],
   providers: [],

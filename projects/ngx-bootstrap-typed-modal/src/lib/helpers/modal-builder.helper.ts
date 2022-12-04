@@ -99,7 +99,7 @@ export class ModalBuilder<Component, Input, Output>
     if(!this.component)
       throw new Error('missing component, setComponent was not called')
     if(typeof this.input === 'undefined')
-      throw new Error('Input was `undefined`, if it\'s indended set to null instead.')
+      throw new Error('Input was `undefined`, if it\'s intended set to null instead.')
 
     const modalRef = this.ngModal.open(ModalWrapperComponent, {
       centered     : true,
