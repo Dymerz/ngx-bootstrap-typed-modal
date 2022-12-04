@@ -12,6 +12,9 @@ Why
 ---
 I don't want to see any `any` in my projects!
 
+Demo
+----
+[![Edit NG Bootstrap Modal With Full typing](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ng-bootstrap-modal-with-full-typing-fcghru?fontsize=14&hidenavigation=1&theme=dark)
 
 Installation
 ------------
