@@ -26,6 +26,14 @@ Examples
 - [Hello World Modal](./projects/example-app/src/app/modals/hello-world-modal/hello-world-modal.component.ts)
 - [Yes No Modal](./projects/example-app/src/app/modals/yes-no-modal/yes-no-modal.component.ts)
 
+Versions
+--------
+| Angular | ngx-bootstrap-typed-modal |
+|:--------:|:---------------------------:|
+|   15.x   |           0.6.x             |
+|   14.x   |           0.5.x             |
+
+
 Usage
 -----
 ```ts
