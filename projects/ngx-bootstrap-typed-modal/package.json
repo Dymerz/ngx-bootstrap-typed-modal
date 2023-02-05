@@ -1,7 +1,7 @@
 {
   "name": "ngx-bootstrap-typed-modal",
   "description": "Simply create ng-bootstrap modal with typed input and output.",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "author": "Urbain Corentin",
   "license": "WTFPL",
   "keywords": ["typescript", "angular", "bootstrap", "modal", "popup", "typed"],
@@ -9,9 +9,9 @@
   "repository": "https://github.com/Dymerz/ngx-bootstrap-typed-modal",
   "bugs": "https://github.com/Dymerz/ngx-bootstrap-typed-modal/issues",
   "peerDependencies": {
-    "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0",
-    "@ng-bootstrap/ng-bootstrap": "^13.0.0",
+    "@angular/common": "^15.1.3",
+    "@angular/core": "^15.1.3",
+    "@ng-bootstrap/ng-bootstrap": "^14.0.1",
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.2.0"
   },

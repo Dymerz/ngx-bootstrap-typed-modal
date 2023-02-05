@@ -59,7 +59,8 @@
               "projects/example-app/src/assets"
             ],
             "styles": [
-              "projects/example-app/src/styles.scss"
+              "projects/example-app/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
