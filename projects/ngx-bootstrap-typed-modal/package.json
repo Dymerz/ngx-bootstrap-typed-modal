@@ -1,7 +1,7 @@
 {
   "name": "ngx-bootstrap-typed-modal",
   "description": "Simply create ng-bootstrap modal with typed input and output.",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "author": "Urbain Corentin",
   "license": "WTFPL",
   "keywords": ["typescript", "angular", "bootstrap", "modal", "popup", "typed"],
