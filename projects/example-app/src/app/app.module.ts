@@ -19,8 +19,11 @@ import { YesNoModalComponent }      from './modals/yes-no-modal/yes-no-modal.com
   ],
   imports: [
     BrowserModule,
-    NgbModule,          // should be present, if not install `@ng-bootstrap/ng-bootstrap` first
-    NgbTypedModalModule // <- add this
+    NgbModule,                    // should be present, if not install `@ng-bootstrap/ng-bootstrap` first
+
+    NgbTypedModalModule.forRoot({ // <- add this
+      customClasses: ['text-light', 'bg-dark', 'border-dark']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,7 @@ import { NgbActiveModal }        from '@ng-bootstrap/ng-bootstrap';
 
 // Directives
 import { ModalWrapperDirective } from './modal-wrapper.directive';
+import { ConfigService } from '../services/config.service'
 
 
 @Component({
@@ -27,7 +28,10 @@ export class ModalWrapperComponent implements OnInit {
 
   @ViewChild(ModalWrapperDirective, {static: true}) modalWrapperHost!: ModalWrapperDirective;
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor(
+    public readonly config     : ConfigService,
+    public readonly activeModal: NgbActiveModal
+  ) { }
 
   ngOnInit(): void
   {

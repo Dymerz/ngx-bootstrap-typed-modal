@@ -30,6 +30,8 @@ Versions
 --------
 | Angular | ngx-bootstrap-typed-modal |
 |:--------:|:---------------------------:|
+|   17.x   |           0.8.x             |
+|   16.x   |           0.7.x             |
 |   15.x   |           0.6.x             |
 |   14.x   |           0.5.x             |
 
@@ -71,7 +73,14 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     NgbModule,          // should be present, if not install `@ng-bootstrap/ng-bootstrap`
-    NgbTypedModalModule // <- add this
+
+    // import the module
+    NgbTypedModalModule.forRoot()
+
+    // or can be configured with options
+    // NgbTypedModalModule.forRoot({
+    //   customClass: 'my-custom-class',
+    // })
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -240,4 +249,14 @@ componentInstance: {
   componentData: Input
   modalData    : ModalData
 },
+```
+
+NgbTypedModalModuleConfig
+-------------------------
+
+Pass custom configuration
+```ts
+{
+  customClass?: string|string[]
+}
 ```
