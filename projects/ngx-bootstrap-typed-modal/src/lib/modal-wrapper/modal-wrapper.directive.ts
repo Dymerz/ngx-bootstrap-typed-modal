@@ -4,7 +4,8 @@ import { ViewContainerRef } from '@angular/core';
 
 
 @Directive({
-  selector: '[modal-wrapper-host]'
+    selector: '[modal-wrapper-host]',
+    standalone: true
 })
 export class ModalWrapperDirective
 {

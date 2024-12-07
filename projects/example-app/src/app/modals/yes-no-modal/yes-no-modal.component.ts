@@ -15,8 +15,9 @@ type DataOutput = {
 }
 
 @Component({
-  selector   : 'app-yes-no-modal',
-  templateUrl: './yes-no-modal.component.html'
+    selector: 'app-yes-no-modal',
+    templateUrl: './yes-no-modal.component.html',
+    standalone: true
 })
 export class YesNoModalComponent extends NgbTypedModal<DataInput, DataOutput> implements OnInit {
 

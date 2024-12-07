@@ -1,7 +1,7 @@
-<div class="modal-header {{ config.getStyleClasses() }}">
+<div class="modal-header {{ getStyleClasses() }}">
   <h6 class="modal-title">{{ modalData.title }}</h6>
   <button type="button" class="btn-close" aria-label="close" (click)="activeModal.dismiss()"></button>
 </div>
-<div class="modal-body auto  {{ config.getStyleClasses() }}">
+<div class="modal-body auto  {{ getStyleClasses() }}">
   <ng-template modal-wrapper-host></ng-template>
 </div>
