@@ -10,8 +10,9 @@ type DataInput  = null
 type DataOutput = null
 
 @Component({
-  selector: 'app-hello-world-modal',
-  template: '<p>hello-world-modal works!</p>'
+    selector: 'app-hello-world-modal',
+    template: '<p>hello-world-modal works!</p>',
+    standalone: true
 })
 export class HelloWorldModalComponent extends NgbTypedModal<DataInput, DataOutput> implements OnInit {
 

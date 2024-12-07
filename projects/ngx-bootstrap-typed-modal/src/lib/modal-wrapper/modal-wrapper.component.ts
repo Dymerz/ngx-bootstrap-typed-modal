@@ -17,8 +17,10 @@ import { ConfigService } from '../services/config.service'
 
 
 @Component({
-  selector: 'app-modal-wrapper',
-  templateUrl: './modal-wrapper.component.html'
+    selector: 'app-modal-wrapper',
+    templateUrl: './modal-wrapper.component.html',
+    standalone: true,
+    imports: [ModalWrapperDirective]
 })
 export class ModalWrapperComponent implements OnInit {
 

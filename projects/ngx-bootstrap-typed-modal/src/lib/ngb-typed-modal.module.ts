@@ -10,13 +10,11 @@ import { NgbTypedModalModuleConfig } from './types/ngb-typed-model-module-config
 import { ConfigService } from './services/config.service'
 
 @NgModule({
-  declarations: [
-    ModalWrapperComponent,
-    ModalWrapperDirective
-  ],
-  exports: [
-    ModalWrapperComponent
-  ]
+    imports: [ModalWrapperComponent,
+        ModalWrapperDirective],
+    exports: [
+        ModalWrapperComponent
+    ]
 })
 export class NgbTypedModalModule
 {

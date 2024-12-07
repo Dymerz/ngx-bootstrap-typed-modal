@@ -12,20 +12,17 @@ import { HelloWorldModalComponent } from './modals/hello-world-modal/hello-world
 import { YesNoModalComponent }      from './modals/yes-no-modal/yes-no-modal.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HelloWorldModalComponent,
-    YesNoModalComponent,
-  ],
-  imports: [
-    BrowserModule,
-    NgbModule,                    // should be present, if not install `@ng-bootstrap/ng-bootstrap` first
-
-    NgbTypedModalModule.forRoot({ // <- add this
-      customClasses: ['text-light', 'bg-dark', 'border-dark']
-    })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        NgbModule, // should be present, if not install `@ng-bootstrap/ng-bootstrap` first
+        NgbTypedModalModule.forRoot({
+            customClasses: ['text-light', 'bg-dark', 'border-dark']
+        }),
+        HelloWorldModalComponent,
+        YesNoModalComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
