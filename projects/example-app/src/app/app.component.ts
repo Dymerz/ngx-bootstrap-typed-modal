@@ -10,8 +10,9 @@ import { YesNoModalComponent }      from './modals/yes-no-modal/yes-no-modal.com
 
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    standalone: true
 })
 export class AppComponent {
   title = 'example-app';
