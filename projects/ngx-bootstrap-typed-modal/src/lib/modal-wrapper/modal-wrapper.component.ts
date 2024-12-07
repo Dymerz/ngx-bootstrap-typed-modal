@@ -1,20 +1,21 @@
 // Angular modules
-import { Component }             from '@angular/core';
-import { Input }                 from '@angular/core';
-import { OnInit }                from '@angular/core';
-import { Type }                  from '@angular/core';
-import { ViewChild }             from '@angular/core';
+import { Component }                 from '@angular/core';
+import { Inject }                    from '@angular/core';
+import { Input }                     from '@angular/core';
+import { OnInit }                    from '@angular/core';
+import { Type }                      from '@angular/core';
+import { ViewChild }                 from '@angular/core';
 
 // External modules
-import { NgbTypedModal }         from '../helpers/ngb-typed-modal';
-import { ModalData }             from '../types/modal-data.types';
-import { ModalForm }             from '../types/modal-form.types';
-import { NgbActiveModal }        from '@ng-bootstrap/ng-bootstrap';
+import { NgbTypedModal }             from '../helpers/ngb-typed-modal';
+import { NgbTypedModalConfig }       from '../ngb-typed-modal.config';
+import { ModalData }                 from '../types/modal-data.types';
+import { ModalForm }                 from '../types/modal-form.types';
+import { NgbTypedModalModuleConfig } from '../types/ngb-typed-model-module-config.type';
+import { NgbActiveModal }            from '@ng-bootstrap/ng-bootstrap';
 
 // Directives
-import { ModalWrapperDirective } from './modal-wrapper.directive';
-import { ConfigService } from '../services/config.service'
-
+import { ModalWrapperDirective }     from './modal-wrapper.directive';
 
 @Component({
     selector: 'app-modal-wrapper',
@@ -31,7 +32,7 @@ export class ModalWrapperComponent implements OnInit {
   @ViewChild(ModalWrapperDirective, {static: true}) modalWrapperHost!: ModalWrapperDirective;
 
   constructor(
-    public readonly config     : ConfigService,
+    @Inject(NgbTypedModalConfig) public config: NgbTypedModalModuleConfig,
     public readonly activeModal: NgbActiveModal
   ) { }
 
@@ -50,5 +51,13 @@ export class ModalWrapperComponent implements OnInit {
     component.instance.data = modalForm.data;
     component.instance.submitData.subscribe(this.activeModal.close)
     component.instance.submitClose.subscribe(this.activeModal.close)
+  }
+
+  public getStyleClasses(): string
+  {
+    if(typeof this.config.customClasses === 'string')
+      return this.config.customClasses;
+    else
+      return this.config.customClasses.join(' ');
   }
 }
